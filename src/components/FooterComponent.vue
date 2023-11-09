@@ -1,6 +1,8 @@
 <template>
     <footer>
-        Footer
+        <section class="footer-top">
+
+        </section>
     </footer>
 </template>
 
@@ -10,4 +12,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+footer {
+    .footer-top {
+        background-image: url("../images/footer-bg.jpg");
+    }
+}
+</style>
