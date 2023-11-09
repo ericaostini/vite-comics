@@ -1,7 +1,7 @@
 <template>
-    <nav class="nav">
-        <a class="nav-link text-light" :class="{ 'active': info.active }" href="#" v-for="(info, index) in informations"
-            :key="index">{{ info.text }}</a>
+    <nav class="nav container justify-content-center">
+        <li class="nav-link text-dark" :class="{ 'active': info.active }" v-for="(info, index) in informations"
+            :key="index">{{ info.text }}</li>
     </nav>
 </template>
 
@@ -59,10 +59,12 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-    color: white;
+    li {
+        color: black;
+    }
 }
 
 .active {
-    background-color: yellow;
+    text-decoration: underline blue;
 }
 </style>
