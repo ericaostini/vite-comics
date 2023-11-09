@@ -1,19 +1,19 @@
 <template>
-  <div>
-    <HeaderC />
-    <MainComponent />
-    <footer>Footer</footer>
-  </div>
+  <HeaderC />
+  <MainComponent />
+  <FooterComponent />
 </template>
 
 <script>
 import HeaderC from './components/HeaderC.vue';
 import MainComponent from './components/MainComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 export default {
   name: 'App',
   component: {
     HeaderC,
-    MainComponent
+    MainComponent,
+    FooterComponent
   }
 }
 </script>
