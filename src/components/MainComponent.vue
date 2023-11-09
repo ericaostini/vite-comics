@@ -3,12 +3,17 @@
         <section class="section-one">
             <p class="container">--Content goes here--</p>
         </section>
+        <IconComponent />
     </main>
 </template>
 
 <script>
+import IconComponent from './IconComponent.vue';
 export default {
-    name: 'MainComponent'
+    name: 'MainComponent',
+    components: {
+        IconComponent,
+    }
 }
 </script>
 
