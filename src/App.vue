@@ -1,12 +1,20 @@
 <template>
-  <header>Header</header>
-  <main>Main</main>
-  <footer>Footer</footer>
+  <div>
+    <HeaderC />
+    <MainComponent />
+    <footer>Footer</footer>
+  </div>
 </template>
 
 <script>
+import HeaderC from './components/HeaderC.vue';
+import MainComponent from './components/MainComponent.vue';
 export default {
-  name: 'App'
+  name: 'App',
+  component: {
+    HeaderC,
+    MainComponent
+  }
 }
 </script>
 
