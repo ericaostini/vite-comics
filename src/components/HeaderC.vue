@@ -19,13 +19,13 @@ export default {
 
 <style lang="scss">
 header {
-    height: 120px;
+    height: 100px;
     background-color: white;
-    border: 1px solid black;
-    padding: 20px;
+    padding: 14px;
 }
 
 header {
+
     img {
         height: 75px;
         width: 75px;

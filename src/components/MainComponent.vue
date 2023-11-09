@@ -20,7 +20,7 @@ export default {
 <style lang="scss">
 main {
     .section-one {
-        height: 120px;
+        height: 100px;
         background-color: black;
         position: relative;
 

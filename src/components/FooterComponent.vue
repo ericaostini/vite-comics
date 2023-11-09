@@ -12,8 +12,8 @@
         <section class="footer-bottom">
             <div class="container d-flex justify-content-between align-items-center">
                 <button class="btn text-light">SIGN-UP NOW</button>
-                <div class="d-flex">
-                    <p class="mx-3 text-info">FOLLOW US</p>
+                <div class="d-flex align-items-center">
+                    <div class="mx-3 text-info">FOLLOW US</div>
                     <img v-for="(icon, index) in icons" :src="icon" alt="">
                 </div>
             </div>
@@ -55,7 +55,7 @@ export default {
 footer {
     .footer-top {
         background-image: url("../images/footer-bg.jpg");
-        height: 320px;
+        height: 370px;
         overflow: hidden;
 
         li {
@@ -72,6 +72,8 @@ footer {
 
     .footer-bottom {
         background-color: rgb(51, 50, 50);
+        height: calc(100vh - 670px);
+        padding: 30px;
 
         button {
             border: 1px solid blue;

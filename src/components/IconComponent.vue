@@ -43,7 +43,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    height: 120px;
+    height: 100px;
     padding: 20px;
 
     img {
