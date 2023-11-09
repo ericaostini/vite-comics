@@ -14,3 +14,5 @@ Creo nuovo progetto con Vite e Vue
         npm install
         npm run dev
     ```
+
+* Su file .gitignore aggiungo file package-lock.json
