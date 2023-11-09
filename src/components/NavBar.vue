@@ -1,5 +1,5 @@
 <template>
-    <nav class="nav container justify-content-center">
+    <nav class="nav container justify-content-end">
         <li class="nav-link text-dark" :class="{ 'active': info.active }" v-for="(info, index) in informations"
             :key="index">{{ info.text }}</li>
     </nav>

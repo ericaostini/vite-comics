@@ -1,7 +1,10 @@
 <template>
     <section class="bg-primary">
-        <div>
-            <img src="" alt="">
+        <div class="d-flex container justify-content-evenly">
+            <div v-for="(image, index) in images" :key="index" class="d-flex align-items-center">
+                <img :src="image.img" alt="">
+                <p>{{ image.text }}</p>
+            </div>
         </div>
     </section>
 </template>
@@ -41,5 +44,16 @@ export default {
 <style lang="scss" scoped>
 section {
     height: 120px;
+    padding: 20px;
+
+    img {
+        width: 50px;
+        height: 65px;
+    }
+
+    p {
+        color: white;
+        margin-left: 10px;
+    }
 }
 </style>
