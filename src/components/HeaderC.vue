@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="container d-flex align-items-center justify-content-between">
+        <div class="container d-flex align-items-center justify-content-between flex-nowrap">
             <img src="/images/dc-logo.png" alt="">
             <NavBar />
         </div>
@@ -19,9 +19,9 @@ export default {
 
 <style lang="scss">
 header {
-    height: 100px;
     background-color: white;
-    padding: 14px;
+    padding: 15px;
+    font-family: 'Passion One', sans-serif;
 }
 
 header {

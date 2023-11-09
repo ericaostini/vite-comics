@@ -1,7 +1,8 @@
 <template>
     <nav class="nav container justify-content-end">
         <li class="nav-link text-dark" :class="{ 'active': info.active }" v-for="(info, index) in informations"
-            :key="index">{{ info.text }}</li>
+            :key="index">{{
+                info.text }}</li>
     </nav>
 </template>
 
@@ -65,6 +66,6 @@ nav {
 }
 
 .active {
-    text-decoration: underline blue;
+    border-bottom: 2px solid #0C6DFD;
 }
 </style>

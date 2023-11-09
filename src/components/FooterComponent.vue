@@ -3,17 +3,17 @@
         <section class="footer-top">
             <div class="container d-flex justify-content-between">
                 <ul v-for="(info, index) in footerInfos" :key="index">
-                    <li>{{ info.title }}</li>
-                    <li v-for="(i, index) in info.inform"><small>{{ i }}</small></li>
+                    <li class="fw-bolder">{{ info.title }}</li>
+                    <li v-for="(i, index) in info.inform" class="small-title"><small>{{ i }}</small></li>
                 </ul>
                 <img src="/images/dc-logo-bg.png" alt="">
             </div>
         </section>
         <section class="footer-bottom">
             <div class="container d-flex justify-content-between align-items-center">
-                <button class="btn text-light">SIGN-UP NOW</button>
+                <button class="btn text-light fw-bolder">SIGN-UP NOW</button>
                 <div class="d-flex align-items-center">
-                    <div class="mx-3 text-info">FOLLOW US</div>
+                    <div class="mx-3 text-light fw-bolder followUS">FOLLOW US</div>
                     <img v-for="(icon, index) in icons" :src="icon" alt="">
                 </div>
             </div>
@@ -53,18 +53,32 @@ export default {
 
 <style lang="scss" scoped>
 footer {
+    font-family: 'Open Sans', sans-serif;
+
     .footer-top {
         background-image: url("../images/footer-bg.jpg");
         height: 370px;
         overflow: hidden;
 
-        li {
-            color: white;
-            list-style: none;
+        ul {
+            padding-top: 20px;
+
+            li {
+                color: white;
+                list-style: none;
+            }
+
+            .small-title {
+                color: rgba(255, 255, 255, 0.532);
+
+                &:hover {
+                    color: white;
+                }
+            }
         }
 
         img {
-            height: 450px;
+            height: 500px;
             position: relative;
             top: -60px;
         }
@@ -72,12 +86,16 @@ footer {
 
     .footer-bottom {
         background-color: rgb(51, 50, 50);
-        height: calc(100vh - 670px);
+        height: calc(100% - 670px);
         padding: 30px;
 
         button {
-            border: 1px solid blue;
+            border: 1px solid #0C6DFD;
             padding: 10px;
+
+            &:hover {
+                background-color: #0C6DFD;
+            }
 
         }
 

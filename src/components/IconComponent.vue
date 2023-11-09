@@ -3,7 +3,7 @@
         <div class="d-flex container justify-content-evenly">
             <div v-for="(image, index) in images" :key="index" class="d-flex align-items-center">
                 <img :src="image.img" alt="">
-                <p>{{ image.text }}</p>
+                <p><a href="#">{{ image.text }}</a></p>
             </div>
         </div>
     </section>
@@ -43,6 +43,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
+    font-family: 'Open Sans', sans-serif;
     height: 100px;
     padding: 20px;
 
@@ -52,8 +53,16 @@ section {
     }
 
     p {
-        color: white;
         margin-left: 10px;
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 </style>

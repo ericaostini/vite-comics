@@ -19,6 +19,8 @@ export default {
 
 <style lang="scss">
 main {
+    font-family: 'Open Sans', sans-serif;
+
     .section-one {
         height: 100px;
         background-color: black;
