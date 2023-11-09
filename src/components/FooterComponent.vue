@@ -1,10 +1,13 @@
 <template>
     <footer>
         <section class="footer-top">
-            <ul v-for="(info, index) in footerInfos" :key="index">
-                <li>{{ info.title }}</li>
-                <li v-for="(i, index) in info.inform">{{ i }}</li>
-            </ul>
+            <div class="container d-flex">
+                <ul v-for="(info, index) in footerInfos" :key="index">
+                    <li>{{ info.title }}</li>
+                    <li v-for="(i, index) in info.inform"><small>{{ i }}</small></li>
+                </ul>
+                <img src="" alt="">
+            </div>
         </section>
     </footer>
 </template>
@@ -42,10 +45,11 @@ export default {
 footer {
     .footer-top {
         background-image: url("../images/footer-bg.jpg");
-        height: 300px;
+        height: 320px;
 
         li {
             color: white;
+            list-style: none;
         }
     }
 }
