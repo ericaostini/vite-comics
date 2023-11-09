@@ -16,3 +16,5 @@ Creo nuovo progetto con Vite e Vue
     ```
 
 * Su file .gitignore aggiungo file package-lock.json
+
+Dopo di che svuoto file App.vue e file style.css
