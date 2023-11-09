@@ -9,6 +9,15 @@
                 <img src="/images/dc-logo-bg.png" alt="">
             </div>
         </section>
+        <section class="footer-bottom">
+            <div class="container">
+                <button class="btn text-light">SIGN-UP NOW</button>
+                <div>
+                    <p>FOLLOW US</p>
+
+                </div>
+            </div>
+        </section>
     </footer>
 </template>
 
@@ -35,7 +44,8 @@ export default {
                     inform: ['Shop DC', 'Shop DC Collectibles']
                 },
 
-            ]
+            ],
+            icons: ['/images/footer-facebook.png', '/images/footer-periscope.png', '/images/footer-pinterest.png', '/images/footer-twitter.png', '/images/footer-youtube.png']
         }
     },
 }
@@ -57,6 +67,15 @@ footer {
             height: 450px;
             position: relative;
             top: -60px;
+        }
+    }
+
+    .footer-bottom {
+        background-color: rgb(51, 50, 50);
+
+        button {
+            border: 1px solid blue;
+            padding: 10px;
         }
     }
 }
