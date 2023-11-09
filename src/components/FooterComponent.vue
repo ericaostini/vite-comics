@@ -10,11 +10,11 @@
             </div>
         </section>
         <section class="footer-bottom">
-            <div class="container">
+            <div class="container d-flex justify-content-between align-items-center">
                 <button class="btn text-light">SIGN-UP NOW</button>
-                <div>
-                    <p>FOLLOW US</p>
-
+                <div class="d-flex">
+                    <p class="mx-3 text-info">FOLLOW US</p>
+                    <img v-for="(icon, index) in icons" :src="icon" alt="">
                 </div>
             </div>
         </section>
@@ -76,6 +76,13 @@ footer {
         button {
             border: 1px solid blue;
             padding: 10px;
+
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
         }
     }
 }
