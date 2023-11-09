@@ -1,13 +1,22 @@
 <template>
     <header>
-        Header
+        <NavBar />
     </header>
 </template>
 
 <script>
+import NavBar from './NavBar.vue';
 export default {
-    name: 'HeaderC'
+    name: 'HeaderC',
+    components: {
+        NavBar
+    }
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+header {
+    height: 100px;
+    background-color: black;
+}
+</style>
