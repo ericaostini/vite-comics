@@ -1,12 +1,12 @@
 <template>
     <footer>
         <section class="footer-top">
-            <div class="container d-flex">
+            <div class="container d-flex justify-content-between">
                 <ul v-for="(info, index) in footerInfos" :key="index">
                     <li>{{ info.title }}</li>
                     <li v-for="(i, index) in info.inform"><small>{{ i }}</small></li>
                 </ul>
-                <img src="" alt="">
+                <img src="/images/dc-logo-bg.png" alt="">
             </div>
         </section>
     </footer>
@@ -46,10 +46,17 @@ footer {
     .footer-top {
         background-image: url("../images/footer-bg.jpg");
         height: 320px;
+        overflow: hidden;
 
         li {
             color: white;
             list-style: none;
+        }
+
+        img {
+            height: 450px;
+            position: relative;
+            top: -60px;
         }
     }
 }
