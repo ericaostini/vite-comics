@@ -1,7 +1,7 @@
 <template>
     <main>
         <section class="section-one">
-            <p class="container">--Content goes here--</p>
+            <img src="../assets/images/jumbotron.jpg" alt="">
         </section>
         <IconComponent />
     </main>
@@ -22,9 +22,15 @@ main {
     font-family: 'Open Sans', sans-serif;
 
     .section-one {
-        height: 100px;
         background-color: black;
         position: relative;
+
+        img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
 
         p {
             color: white;
