@@ -1,7 +1,8 @@
 <template>
     <section class="bg-primary">
         <div class="d-flex container justify-content-evenly">
-            <div v-for="(image, index) in images" :key="index" class="d-flex align-items-center">
+            <div v-for="(image, index) in images" :key="index"
+                class="d-flex align-items-end justify-content-between m-auto">
                 <img :src="image.img" alt="">
                 <p><a href="#">{{ image.text }}</a></p>
             </div>
@@ -48,8 +49,8 @@ section {
     padding: 20px;
 
     img {
-        width: 50px;
-        height: 65px;
+        width: 42px;
+        height: 52px;
     }
 
     p {
