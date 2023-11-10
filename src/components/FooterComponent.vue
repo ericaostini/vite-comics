@@ -2,11 +2,20 @@
     <footer>
         <section class="footer-top">
             <div class="container d-flex justify-content-between">
-                <ul v-for="(info, index) in footerInfos" :key="index">
-                    <li class="fw-bolder">{{ info.title }}</li>
-                    <li v-for="(i, index) in info.inform" class="small-title"><small>{{ i }}</small></li>
-                </ul>
-                <img src="/images/dc-logo-bg.png" alt="">
+                <div>
+                    <div class="d-flex">
+                        <ul v-for="(info, index) in footerInfos" :key="index">
+                            <li class="fw-bolder">{{ info.title }}</li>
+                            <li v-for="(i, index) in info.inform" class="small-title"><small>{{ i }}</small></li>
+                        </ul>
+                    </div>
+                    <ul class="info-relative">
+                        <li class="fw-bolder">SHOP</li>
+                        <li><small>Shop DC</small></li>
+                        <li><small>Shop DC</small></li>
+                    </ul>
+                </div>
+                <img class="position-relative" src="/images/dc-logo-bg.png" alt="">
             </div>
         </section>
         <section class="footer-bottom">
@@ -38,11 +47,7 @@ export default {
                 {
                     title: 'SITES',
                     inform: ['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa']
-                },
-                {
-                    title: 'SHOP',
-                    inform: ['Shop DC', 'Shop DC Collectibles']
-                },
+                }
 
             ],
             icons: ['/images/footer-facebook.png', '/images/footer-periscope.png', '/images/footer-pinterest.png', '/images/footer-twitter.png', '/images/footer-youtube.png']
@@ -58,6 +63,16 @@ footer {
     .footer-top {
         background-image: url("../images/footer-bg.jpg");
         overflow: hidden;
+        height: 450px;
+
+        .info-relative {
+            position: relative;
+            bottom: 110px;
+
+            small {
+                color: rgba(255, 255, 255, 0.532);
+            }
+        }
 
         ul {
             padding-top: 20px;
@@ -77,9 +92,8 @@ footer {
         }
 
         img {
-            height: 500px;
             position: relative;
-            top: -60px;
+            top: -50px;
         }
     }
 
