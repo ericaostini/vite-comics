@@ -1,8 +1,6 @@
 <template>
-    <div class="col-4">
-        <img :src="image" alt="serie">
-        <p><strong>{{ serie }}</strong></p>
-    </div>
+    <img :src="image" alt="serie">
+    <p class="text-light text-uppercase mb-5 "><small>{{ serie }}</small></p>
 </template>
 
 <script>
