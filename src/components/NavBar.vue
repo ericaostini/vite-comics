@@ -1,9 +1,9 @@
 <template>
-    <nav class="nav container justify-content-end">
-        <li class="nav-link" :class="{ 'active': info.active }" v-for="(info, index) in informations" :key="index"><a
-                href="#" class="text-dark">{{
-                    info.text }}</a></li>
-    </nav>
+    <div class="d-flex justify-content-center">
+        <li :class="{ 'active': info.active }" v-for="(info, index) in informations" :key="index">
+            <a href="#" class="text-dark">{{ info.text }}</a>
+        </li>
+    </div>
 </template>
 
 <script>
@@ -52,15 +52,18 @@ export default {
                     text: 'SHOP',
                     active: false,
                 },
-            ]
+            ],
+            activeIndex: 0
         }
-    },
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-nav {
+div {
     li {
+        list-style: none;
+        margin-left: 20px;
 
         a {
             text-decoration: none;
@@ -69,6 +72,6 @@ nav {
 }
 
 .active {
-    border-bottom: 2px solid #0C6DFD;
+    border-bottom: 3px outset #0C6DFD;
 }
 </style>

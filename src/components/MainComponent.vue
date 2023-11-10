@@ -2,10 +2,10 @@
     <main>
         <section class="section-one">
             <img src="../assets/images/jumbotron.jpg" alt="">
-            <div class="container mt-5 position-relative ">
+            <div class="container mt-5 position-relative">
                 <div class="my-block text-light fw-bolder">CURRENT SERIES</div>
-                <div class="row">
-                    <div class="col-lg-2 col-md-4" v-for="(card, index) in myCards" :key="index">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-4 col-sm-12" v-for="(card, index) in myCards" :key="index">
                         <CardComponent :image="card.thumb" :serie="card.series" />
                     </div>
                 </div>

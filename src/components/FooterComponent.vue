@@ -57,7 +57,6 @@ footer {
 
     .footer-top {
         background-image: url("../images/footer-bg.jpg");
-        height: 370px;
         overflow: hidden;
 
         ul {

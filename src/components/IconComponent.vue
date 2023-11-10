@@ -45,7 +45,6 @@ export default {
 <style lang="scss" scoped>
 section {
     font-family: 'Open Sans', sans-serif;
-    height: 100px;
     padding: 20px;
 
     img {
