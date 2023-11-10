@@ -8,6 +8,9 @@
                         <CardComponent :image="card.thumb" :serie="card.series" />
                     </div>
                 </div>
+                <div class="mx-auto d-grid ">
+                    <button class="btn text-light fw-bolder mb-5">LOAD MORE</button>
+                </div>
             </div>
         </section>
         <IconComponent />
@@ -47,8 +50,14 @@ main {
             object-position: top;
         }
 
-        .mycard {
-            background-color: black;
+        button {
+            background-color: #0C6DFD;
+            padding: 5px 40px;
+            margin: 0 auto;
+
+            &:hover {
+                border: 2px solid white;
+            }
         }
     }
 }
