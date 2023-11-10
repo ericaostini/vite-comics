@@ -52,3 +52,10 @@ Stistemo css per l'intera pagina
 * Aggiunto font
 * Sistemo colori
 * Padding e margin 
+
+## Fase 5 
+Utilizzo file dc-comics.json per importare l'array delle card.
+Creo componente nuova Card, che verrà interita al posto della scritta 
+--Content goes here--
+
+Passo il contenuto del file .json al componente Card con props 
