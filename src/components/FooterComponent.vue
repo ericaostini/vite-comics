@@ -6,7 +6,8 @@
                     <div class="d-flex">
                         <ul v-for="(info, index) in footerInfos" :key="index">
                             <li class="fw-bolder">{{ info.title }}</li>
-                            <li v-for="(i, index) in info.inform" class="small-title"><small>{{ i }}</small></li>
+                            <li v-for="(i, index) in info.inform" class="small-title"><small>{{ i }}</small>
+                            </li>
                         </ul>
                     </div>
                     <ul class="info-relative">
@@ -67,7 +68,7 @@ footer {
 
         .info-relative {
             position: relative;
-            bottom: 110px;
+            bottom: 126px;
 
             small {
                 color: rgba(255, 255, 255, 0.532);
@@ -75,7 +76,8 @@ footer {
         }
 
         ul {
-            padding-top: 20px;
+            padding-top: 40px;
+            padding-right: 40px;
 
             li {
                 color: white;
