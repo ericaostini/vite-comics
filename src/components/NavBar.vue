@@ -1,6 +1,6 @@
 <template>
-    <div class="d-flex justify-content-center">
-        <li :class="{ 'active': info.active }" v-for="(info, index) in informations" :key="index">
+    <div class="d-flex justify-content-center flex-wrap">
+        <li class="m-sm-3" :class="{ 'active': info.active }" v-for="(info, index) in informations" :key="index">
             <a href="#" class="text-dark">{{ info.text }}</a>
         </li>
     </div>

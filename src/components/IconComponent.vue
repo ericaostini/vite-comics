@@ -1,10 +1,12 @@
 <template>
     <section class="bg-primary">
-        <div class="d-flex container justify-content-evenly">
-            <div v-for="(image, index) in images" :key="index"
-                class="d-flex align-items-end justify-content-between m-auto">
-                <img :src="image.img" alt="">
-                <p><a href="#">{{ image.text }}</a></p>
+        <div class="container">
+            <div class="d-flex justify-content-evenly flex-md-wrap flex-sm-wrap">
+                <div v-for="(image, index) in images" :key="index"
+                    class="d-flex align-items-end justify-content-between mb-md-4 mb-sm-4">
+                    <img :src="image.img" alt="">
+                    <p><a href="#">{{ image.text }}</a></p>
+                </div>
             </div>
         </div>
     </section>
@@ -45,7 +47,7 @@ export default {
 <style lang="scss" scoped>
 section {
     font-family: 'Open Sans', sans-serif;
-    padding: 20px;
+    padding: 50px;
 
     img {
         width: 42px;

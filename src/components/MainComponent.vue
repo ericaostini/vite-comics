@@ -4,8 +4,8 @@
             <img src="../assets/images/jumbotron.jpg" alt="">
             <div class="container mt-5 position-relative">
                 <div class="my-block text-light fw-bolder">CURRENT SERIES</div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-2 col-md-4 col-sm-12" v-for="(card, index) in myCards" :key="index">
+                <div class="row justify-content-between ms-md-5 ms-lg-auto">
+                    <div class="col-lg-2 col-md-4 col" v-for="(card, index) in myCards" :key="index">
                         <CardComponent :image="card.thumb" :serie="card.series" />
                     </div>
                 </div>
@@ -45,11 +45,12 @@ main {
         position: relative;
 
         .my-block {
+            font-size: 18px;
             background-color: #0C6DFD;
             width: fit-content;
-            padding: 5px 15px;
+            padding: 10px 20px;
             position: absolute;
-            top: -60px;
+            top: -70px;
             left: -10px;
         }
 

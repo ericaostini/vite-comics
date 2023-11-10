@@ -1,7 +1,7 @@
 <template>
-    <div class="mycard">
+    <div class="cards">
         <img :src="image" alt="serie">
-        <p class="text-light text-uppercase mb-5 "><small>{{ serie }}</small></p>
+        <p class="text-light text-uppercase mb-5"><small>{{ serie }}</small></p>
     </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.mycard {
+.cards {
     img {
         height: 150px;
         width: 150px;
