@@ -2,7 +2,8 @@
     <main>
         <section class="section-one">
             <img src="../assets/images/jumbotron.jpg" alt="">
-            <div class="container mt-5">
+            <div class="container mt-5 position-relative ">
+                <div class="my-block text-light fw-bolder">CURRENT SERIES</div>
                 <div class="row">
                     <div class="col-lg-2 col-md-4" v-for="(card, index) in myCards" :key="index">
                         <CardComponent :image="card.thumb" :serie="card.series" />
@@ -42,6 +43,15 @@ main {
     .section-one {
         background-color: black;
         position: relative;
+
+        .my-block {
+            background-color: #0C6DFD;
+            width: fit-content;
+            padding: 5px 15px;
+            position: absolute;
+            top: -60px;
+            left: -10px;
+        }
 
         img {
             height: 300px;
