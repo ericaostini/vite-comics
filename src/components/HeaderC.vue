@@ -18,10 +18,12 @@ export default {
 </script>
 
 <style lang="scss">
+@use '.././assets/style/partials/variables' as *;
+
 header {
     background-color: white;
     padding: 15px;
-    font-family: 'Passion One', sans-serif;
+    font-family: $title-font;
 }
 
 header {

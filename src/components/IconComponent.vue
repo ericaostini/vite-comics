@@ -45,8 +45,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '.././assets/style/partials/variables' as *;
+
 section {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $main-font;
     padding: 50px;
 
     img {

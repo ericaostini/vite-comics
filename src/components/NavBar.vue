@@ -60,6 +60,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '.././assets/style/partials/variables' as *;
+
 div {
     li {
         list-style: none;
@@ -72,6 +74,6 @@ div {
 }
 
 .active {
-    border-bottom: 3px outset #0C6DFD;
+    border-bottom: 3px outset $color-theme;
 }
 </style>

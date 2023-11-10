@@ -37,8 +37,10 @@ export default {
 </script>
 
 <style lang="scss">
+@use '.././assets/style/partials/variables' as *;
+
 main {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $main-font;
 
     .section-one {
         background-color: black;
@@ -46,7 +48,7 @@ main {
 
         .my-block {
             font-size: 18px;
-            background-color: #0C6DFD;
+            background-color: $color-theme;
             width: fit-content;
             padding: 10px 20px;
             position: absolute;
@@ -62,7 +64,7 @@ main {
         }
 
         button {
-            background-color: #0C6DFD;
+            background-color: $color-theme;
             padding: 5px 40px;
             margin: 0 auto;
 

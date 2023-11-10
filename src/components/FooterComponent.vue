@@ -58,8 +58,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '.././assets/style/partials/variables' as *;
+
 footer {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $main-font;
 
     .footer-top {
         background-image: url("../images/footer-bg.jpg");
@@ -71,7 +73,7 @@ footer {
             bottom: 126px;
 
             small {
-                color: rgba(255, 255, 255, 0.532);
+                color: $color-smalltext;
             }
         }
 
@@ -85,7 +87,7 @@ footer {
             }
 
             .small-title {
-                color: rgba(255, 255, 255, 0.532);
+                color: $color-smalltext;
 
                 &:hover {
                     color: white;
@@ -100,16 +102,16 @@ footer {
     }
 
     .footer-bottom {
-        background-color: rgb(51, 50, 50);
+        background-color: $color-footer;
         height: calc(100% - 670px);
         padding: 30px;
 
         button {
-            border: 1px solid #0C6DFD;
+            border: 1px solid $color-theme;
             padding: 10px;
 
             &:hover {
-                background-color: #0C6DFD;
+                background-color: $color-theme;
             }
 
         }
