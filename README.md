@@ -1,5 +1,10 @@
 ## Vite DC Comics 
 
+Creazione sito clone pagina web DC Comics, dedicato alla vendita di fumetti, film, giochi, video, merchandise.
+Utilizzo framework Vue.js.
+
+![homepage](/src/assets/images/Screenshot%202024-01-31%20alle%2015.16.35.png)
+
 ### Fase 1
 Creo nuovo progetto con Vite e Vue 
 * Creo file in GitHub 'vite-comics'
